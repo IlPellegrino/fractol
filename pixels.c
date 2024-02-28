@@ -6,7 +6,7 @@
 /*   By: nromito <nromito@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/17 15:16:12 by nromito           #+#    #+#             */
-/*   Updated: 2024/01/31 18:13:19 by nromito          ###   ########.fr       */
+/*   Updated: 2024/02/28 09:23:11 by nromito          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,11 +35,11 @@ int	choose_iter(t_complex new, t_datas *data)
 	int	it;
 
 	it = 0;
-	if (ft_strncmp(data->f_name, "mandelbrot", 10) == 0)
+	if (ft_strncmp(data->f_name, "mandelbrot", 11) == 0)
 		it = iteration_mandelbrot(new, data);
-	else if (ft_strncmp(data->f_name, "julia", 5) == 0)
+	else if (ft_strncmp(data->f_name, "julia", 6) == 0)
 		it = iteration_julia(new, data);
-	else if (ft_strncmp(data->f_name, "geena", 5) == 0)
+	else if (ft_strncmp(data->f_name, "geena", 6) == 0)
 		it = iteration_julia(new, data);
 	return (it);
 }

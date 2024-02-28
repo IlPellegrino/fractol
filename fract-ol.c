@@ -6,7 +6,7 @@
 /*   By: nromito <nromito@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/10 17:41:44 by nromito           #+#    #+#             */
-/*   Updated: 2024/01/31 18:15:18 by nromito          ###   ########.fr       */
+/*   Updated: 2024/02/28 09:23:39 by nromito          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,10 +68,10 @@ int	main(int argc, char *argv[])
 
 	data_init(&data);
 	data.f_name = argv[1];
-	if (argc == 2 && ft_strncmp(argv[1], "mandelbrot", 10) == 0)
+	if (argc == 2 && ft_strncmp(argv[1], "mandelbrot", 11) == 0)
 		start(data);
-	else if (argc == 4 && ((ft_strncmp(argv[1], "julia", 5) == 0)
-			|| (ft_strncmp(argv[1], "geena", 5) == 0)))
+	else if (argc == 4 && ((ft_strncmp(argv[1], "julia", 6) == 0)
+			|| (ft_strncmp(argv[1], "geena", 6) == 0)))
 	{
 		data.x = ft_atod(argv[2]);
 		data.y = ft_atod(argv[3]);
